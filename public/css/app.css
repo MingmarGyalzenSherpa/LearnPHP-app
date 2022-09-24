@@ -1,0 +1,52 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+ 
+    background-color: rgb(76, 76, 234);
+}
+
+/* nav */
+nav{
+    background-color: white;
+    height:100px;
+    padding: 10px;
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:5px;
+    border-bottom: 1px solid black;
+
+}
+
+.container{
+    background-color: white;
+    border:1px solid blueviolet;
+    max-width: 80%;
+    margin:15px auto;
+    padding:50px;
+}
+
+
+h1{
+    color:rgb(103, 103, 194);
+}
+
+.php{
+    color:rgb(75, 75, 246);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.search-bar{
+    width:30%;
+}
+
+.search-bar input{
+    width:100%;
+    padding:10px;
+}
