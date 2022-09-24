@@ -17,7 +17,12 @@
         </div>
     </nav>
     <section class="container grid">
-        fdas
+        @foreach($contents as $content)
+            <div class="content">
+                <h2> <a href="/content/{{$content['title']}}">{{$content['title']}}</a> </h2>
+                
+            </div>
+        @endforeach
     </section>
 </body>
 </html>

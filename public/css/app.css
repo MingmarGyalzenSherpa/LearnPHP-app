@@ -31,6 +31,17 @@ nav{
     padding:50px;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px,50%));
+    gap:15px;
+}
+
+.content{
+    background-color: ghostwhite;
+    border-radius: 5px;
+    padding:20px;
+}
 
 h1{
     color:rgb(103, 103, 194);

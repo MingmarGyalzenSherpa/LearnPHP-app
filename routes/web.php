@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Contents;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index',[
+        'contents'=> Contents::getAllContents()
+    ]);
+});
+
+route::get('/content/{title}', function($title){
+    return view('content',[
+        'content' => Contents::getContent($title)
+    ]);
 });
